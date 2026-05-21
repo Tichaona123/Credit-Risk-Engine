@@ -1,0 +1,8 @@
+[build]
+  publish = "creditriskengine/frontend"
+  command = "echo 'No build required for Vanilla JS'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
