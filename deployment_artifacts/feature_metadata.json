@@ -1,0 +1,183 @@
+{
+  "numeric_features": [
+    "amount_usd",
+    "annual_rate_pct",
+    "term_months",
+    "monthly_income_usd",
+    "existing_obligations",
+    "num_dependents",
+    "months_at_employer",
+    "client_age",
+    "age_bucket",
+    "loan_duration_days",
+    "days_approval_to_disburse",
+    "days_to_first_payment",
+    "approval_month",
+    "approval_quarter",
+    "approval_dayofweek",
+    "est_monthly_payment",
+    "dti_ratio",
+    "total_loan_cost",
+    "interest_to_principal",
+    "income_to_loan",
+    "loan_to_annual_income",
+    "amount_per_term_month",
+    "log_amount",
+    "log_income",
+    "log_rate",
+    "is_mfi_loan",
+    "is_high_rate",
+    "is_short_term",
+    "is_long_term",
+    "has_real_collateral",
+    "has_any_collateral",
+    "stable_employment",
+    "very_new_employee",
+    "high_obligations",
+    "is_young",
+    "high_dti",
+    "rate_x_term",
+    "amount_x_rate",
+    "obligations_ratio",
+    "miss_monthly_income_usd",
+    "miss_collateral_type",
+    "miss_months_at_employer",
+    "miss_employment_sector",
+    "miss_annual_rate_pct",
+    "total_missing",
+    "payment_freq_ord",
+    "gender_enc",
+    "product_code_freq",
+    "payment_frequency_freq",
+    "loan_purpose_freq",
+    "client_gender_freq",
+    "marital_status_freq",
+    "employment_sector_freq",
+    "collateral_type_freq",
+    "disbursement_channel_freq",
+    "province_freq",
+    "province_te",
+    "product_code_te",
+    "employment_sector_te",
+    "loan_purpose_te",
+    "province_x_sector_te"
+  ],
+  "categorical_features": [
+    "product_code",
+    "payment_frequency",
+    "loan_purpose",
+    "client_gender",
+    "marital_status",
+    "employment_sector",
+    "collateral_type",
+    "disbursement_channel",
+    "province",
+    "province_x_sector",
+    "purpose_x_product"
+  ],
+  "feature_importance": [
+    {
+      "Feature": "employment_sector",
+      "Importance": 5.509613435394789
+    },
+    {
+      "Feature": "dti_ratio",
+      "Importance": 4.864589520083689
+    },
+    {
+      "Feature": "monthly_income_usd",
+      "Importance": 4.522465968164323
+    },
+    {
+      "Feature": "employment_sector_te",
+      "Importance": 4.493560869191392
+    },
+    {
+      "Feature": "log_income",
+      "Importance": 3.8696297077172415
+    },
+    {
+      "Feature": "employment_sector_freq",
+      "Importance": 3.5982798045105087
+    },
+    {
+      "Feature": "product_code",
+      "Importance": 3.5296945958695916
+    },
+    {
+      "Feature": "log_rate",
+      "Importance": 3.4342778151788043
+    },
+    {
+      "Feature": "client_age",
+      "Importance": 3.1264981620244963
+    },
+    {
+      "Feature": "province_x_sector_te",
+      "Importance": 3.1004980925483374
+    },
+    {
+      "Feature": "collateral_type",
+      "Importance": 2.883051153306851
+    },
+    {
+      "Feature": "existing_obligations",
+      "Importance": 2.787074587710822
+    },
+    {
+      "Feature": "months_at_employer",
+      "Importance": 2.4146761893348043
+    },
+    {
+      "Feature": "product_code_te",
+      "Importance": 2.3873873027431216
+    },
+    {
+      "Feature": "is_mfi_loan",
+      "Importance": 2.3844246727593204
+    },
+    {
+      "Feature": "annual_rate_pct",
+      "Importance": 2.315305420919769
+    },
+    {
+      "Feature": "amount_per_term_month",
+      "Importance": 1.7668033808741643
+    },
+    {
+      "Feature": "obligations_ratio",
+      "Importance": 1.7440872116055768
+    },
+    {
+      "Feature": "high_dti",
+      "Importance": 1.6729521863218264
+    },
+    {
+      "Feature": "num_dependents",
+      "Importance": 1.624970511191761
+    },
+    {
+      "Feature": "purpose_x_product",
+      "Importance": 1.6175164793815087
+    },
+    {
+      "Feature": "interest_to_principal",
+      "Importance": 1.500042908216336
+    },
+    {
+      "Feature": "est_monthly_payment",
+      "Importance": 1.4798219178834353
+    },
+    {
+      "Feature": "rate_x_term",
+      "Importance": 1.3585454868529685
+    },
+    {
+      "Feature": "loan_duration_days",
+      "Importance": 1.3215085762465992
+    }
+  ],
+  "feature_count": 72,
+  "numeric_count": 61,
+  "categorical_count": 11
+}

@@ -1,0 +1,23 @@
+{
+  "model_name": "CreditRisk_Ensemble_v2",
+  "model_version": "2.0.0",
+  "creation_date": "2026-05-21 19:44:40",
+  "primary_algorithm": "CatBoost",
+  "ensemble_algorithms": [
+    "CatBoost",
+    "LightGBM",
+    "XGBoost"
+  ],
+  "training_samples": 38932,
+  "positive_rate": 0.24118976677283469,
+  "feature_count": 72,
+  "cross_validation_folds": 5,
+  "random_seed": 42,
+  "developer": "Credit Risk Analytics Team",
+  "intended_use": "Loan default probability estimation for IFRS 9 ECL calculations",
+  "limitations": [
+    "Trained on historical data; may not capture unprecedented economic conditions",
+    "Requires consistent feature availability at inference time",
+    "Probabilities should be recalibrated periodically"
+  ]
+}

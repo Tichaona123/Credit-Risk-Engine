@@ -1,0 +1,24 @@
+variable_name,data_type,description,categories_or_range,missing_rate_pct
+ID,ID,Unique loan identifier (2 uppercase letters + 5 digits),Format: XX99999,0.0
+product_code,Categorical,Loan product type,"0=Personal, 1=SME, 2=Agriculture, 3=Salary_Based, 4=Asset_Finance, 5=Emergency",0.0
+date_approved,Date,Loan approval date,YYYY-MM-DD format,0.0
+date_disbursed,Date,Loan disbursement date,YYYY-MM-DD format,0.0
+first_payment_due,Date,First payment due date,YYYY-MM-DD format,0.0
+maturity_date,Date,Loan maturity date,YYYY-MM-DD format,0.0
+amount_usd,Numerical,Loan amount in US Dollars (correlated with income and product type),"Range: ~$50 - ~$75,000",0.0
+annual_rate_pct,Numerical,Annual interest rate (%) — bimodal: bank loans ~10-20% and MFI loans ~60-200%,Range: ~8% - ~202% (bank and microfinance blend),1.0
+term_months,Numerical,Loan repayment term in months,Range: 1 - 48 months,0.0
+payment_frequency,Categorical,Repayment schedule,"Monthly, Bi-Weekly, Weekly",0.0
+loan_purpose,Categorical,Purpose of the loan,"Working_Capital, Stock_Purchase, Equipment, School_Fees, Medical, Home_Improvement, Vehicle, Farming_Inputs, Livestock, Rent, Debt_Consolidation, Wedding, Funeral, Business_Expansion, Personal",2.0
+client_gender,Categorical,Borrower gender,"Male, Female",0.0
+client_dob,Date,Borrower date of birth,DD-Mon-YYYY format,0.0
+marital_status,Categorical,Borrower marital status,"Married, Single, Divorced, Widowed",1.5
+num_dependents,Numerical,Number of dependents,Range: 0 - 8,6.0
+employment_sector,Categorical,Borrower's sector of employment,"Agriculture, Mining, Manufacturing, Retail_Trade, Government, Education, Healthcare, Construction, Transport, Informal_Sector, NGO, Finance, Telecom",3.0
+months_at_employer,Numerical,Months at current employer,Range: 1 - 240,5.0
+monthly_income_usd,Numerical,Monthly income in US Dollars (calibrated to ZIMSTAT Q1 2024 QLFS),"Range: ~$31 - ~$2,792",8.0
+existing_obligations,Numerical,Number of other active loans at time of application,Range: 0 - 8,0.0
+collateral_type,Categorical,Type of collateral provided,"None, Vehicle, Property, Livestock, Savings, Guarantor",4.0
+disbursement_channel,Categorical,Channel through which the loan was disbursed (province-aware: urban/rural variation),"EcoCash, Bank_Transfer, Cash, InnBucks, OneMoney",0.0
+province,Categorical,Borrower's province in Zimbabwe,"Harare, Bulawayo, Manicaland, Mashonaland_West, Mashonaland_East, Mashonaland_Central, Midlands, Masvingo, Matabeleland_South, Matabeleland_North",0.0
+Target,Binary,Target variable: whether the loan defaulted,"0 = No default (repaid), 1 = Default",0.0
